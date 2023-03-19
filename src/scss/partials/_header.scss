@@ -1,0 +1,173 @@
+@use 'global';
+
+.header {
+    min-height: 100vh;
+    width: 317rem;
+    position: fixed;
+    display: flex;
+    justify-content: flex-end;
+    background-color: $color-background;
+    border-right: 1rem solid $color-grey;
+    font-size: 20rem;
+    font-family: 'Chirp', sans-serif;
+    font-weight: 400;
+
+    &__wrapper {
+        min-height: 100vh;
+        width: 275rem;
+        padding: 0 12rem 0 12rem;
+        margin-top: 2rem;
+    }
+
+    &__logo {
+        width: 52rem;
+        height: 52rem;
+        display: flex;
+        padding: 11rem;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+
+    &__logo:hover {
+        background-color: $color-hover-sec;
+    }
+
+    &__icon {
+        fill: $color-primary;
+    }
+}
+
+.nav{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+
+    &__ul{
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+    }
+
+    &__li{
+        width: max-content;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        cursor: pointer;
+        border-radius: 32rem;
+        padding: 12rem;
+        padding-right: 32rem;
+    }
+
+    &__li:hover{
+        background-color: $color-hover-pry;
+    }
+
+    &__icon{
+        width: 26.5rem;
+        height: 26.5rem;
+        margin-right: 20rem;
+    }
+
+    &__label{
+        margin: 0;
+        color: $color-font-pry;
+    }
+
+    &__label--active{
+        font-weight: 700;
+        color: $color-font-sec;
+    }
+    
+}
+
+.twittear{
+    width: max-content;
+    font-size: 18rem;
+    background-color: $color-primary;
+    margin-top: 9rem;
+    border-radius: 32rem;
+    
+    &__btn{
+        padding: 16rem 78rem;
+        cursor: pointer;
+    }
+
+    &__label{
+        color: #FFFFFF;
+        font-weight: 600;
+    }
+}
+
+.twittear:hover{
+    background-color: $color-hover-btn;
+}
+
+.profile{
+    width: 100%;
+    margin-top: 26rem;
+    border-radius: 32rem;
+    padding: 10rem;
+
+    &__a{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    &__img{
+        width: 40rem;
+        height: 40rem;
+        border-radius: 50%;
+        object-fit: cover;
+        margin-right: 10rem;
+    }
+
+    &__users{
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__span{
+        font-size: 15rem;
+        color: $color-font-pry;
+        margin-right: 32rem;
+    }
+
+    &__span--primary{
+        font-weight: 700;
+        color: $color-font-sec;
+    }
+
+    &__icon{
+        width: 19.5rem;
+        height: 19.5rem;
+    }
+}
+
+.profile:hover{
+    background-color: $color-hover-pry;
+}
+
+
+
+//modificar
+main {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+
+.cajas {
+    width: 10em;
+    height: 10em;
+    background-color: red;
+    margin-bottom: 1em;
+}
