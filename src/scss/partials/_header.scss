@@ -152,22 +152,65 @@
     background-color: $color-hover-pry;
 }
 
+@media screen and (max-width: 1300px) {
+    .header {
+        width: 68rem;
+        justify-content: center;
 
+        &__wrapper{
+            width: 100%;
+            padding: 0 4rem 0 4rem;
+        }
 
-//modificar
-main {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: black;
-}
+        &__logo {
+            margin: auto;
+            align-items: center;
+        }
+    }
 
+    .nav{
+        &__ul{
+            align-items: center;
+        }
+    
+        &__li{
+            padding: 12rem;
+        }
+    
+        &__icon{
+            margin: 0;
+        }
+    
+        &__label{
+            display: none;
+        }
+    }
 
-.cajas {
-    width: 10em;
-    height: 10em;
-    background-color: red;
-    margin-bottom: 1em;
+    .profile{
+        &__users{
+            display: none;
+        }
+    }
+
+    .twittear{
+
+        margin: auto;
+        
+        &__btn{
+            padding: 14rem;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+    
+        &__label{
+            display: none;
+        }
+
+        &__icon{
+            width: 24rem;
+            height: 24rem;
+            fill: $color-background;
+        }
+    }
+    
 }
